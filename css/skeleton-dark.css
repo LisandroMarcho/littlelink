@@ -80,6 +80,7 @@ html {
   font-size: 100%;
   color-scheme: dark;
 }
+
 body {
   font-size: 18px;
   line-height: 24px;
@@ -185,4 +186,17 @@ hr {
   margin-bottom: 3.5rem;
   border-width: 0;
   border-top: 1px solid #e1e1e1;
+}
+
+/* Custom
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.short-bio {
+    background-color: white;
+    border-radius: 15px;
+    color: black;
+    font-weight: bold;
+    padding: 10px 20px;
+    max-width: 45ch;
+    margin: 0 auto;
 }
