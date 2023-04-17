@@ -1,0 +1,31 @@
+{
+    "name": "lichodev.com.ar",
+    "version": "1.0.0",
+    "description": "![LittleLink](https://cdn.cottle.cloud/littlelink/social-circle.png)",
+    "main": "index.js",
+    "scripts": {
+        "dev": "next"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lichodev/lichodev.com.ar.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/lichodev/lichodev.com.ar/issues"
+    },
+    "homepage": "https://github.com/lichodev/lichodev.com.ar#readme",
+    "dependencies": {
+        "next": "^13.3.0"
+    },
+    "devDependencies": {
+        "@types/node": "18.15.11",
+        "@types/react": "18.0.37",
+        "autoprefixer": "^10.4.14",
+        "postcss": "^8.4.22",
+        "tailwindcss": "^3.3.1",
+        "typescript": "5.0.4"
+    }
+}
