@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import "./global.css";
 
 export const metadata = {
@@ -12,7 +13,10 @@ export default function RootLayout({
 }) {
     return (
         <html lang="es">
-            <body className="bg-slate-300">{children}</body>
+            <body className="bg-slate-300 min-h-screen">
+                {children}
+                <Footer />
+            </body>
         </html>
     );
 }

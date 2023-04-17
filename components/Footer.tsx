@@ -1,5 +1,3 @@
-import ExternalLink from "./ExternalLink";
-
 export default function Footer() {
     return (
         <footer className="bg-slate-950 text-slate-400 min-h-20 py-6">
