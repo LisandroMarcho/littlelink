@@ -1,4 +1,5 @@
 import Footer from "../components/Footer";
+import Header from "../components/Header";
 import "./global.css";
 
 export const metadata = {
@@ -14,6 +15,7 @@ export default function RootLayout({
     return (
         <html lang="es">
             <body className="bg-slate-300 min-h-screen">
+                <Header />
                 {children}
                 <Footer />
             </body>
