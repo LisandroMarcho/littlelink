@@ -20,7 +20,7 @@ export default function ContactForm() {
     const id = useId();
 
     return (
-        <form className="bg-slate-800 text-white p-6 w-fit rounded">
+        <form className="bg-slate-800 text-white p-6 w-fit rounded mb-2">
             <h2 className="w-full text-3xl mb-5">Contactame</h2>
             <div className="flex gap-16">
                 <div className="flex-col flex justify-between">

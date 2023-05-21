@@ -6,13 +6,6 @@ export default function Hero() {
     return (
         <section className="my-10">
             <div className="flex gap-5">
-                <Image
-                    src={"/avatar.jpg"}
-                    alt="Avatar picture"
-                    width={imgSize}
-                    height={imgSize}
-                    className="rounded-full shadow-lg"
-                />
                 <div className="flex flex-col flex-wrap justify-center max-w-2xl">
                     <span className="text-4xl">Hola, me llamo</span>
                     <h1 className="text-5xl text-primary-500">

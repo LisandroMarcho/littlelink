@@ -13,7 +13,11 @@ export default function Header() {
                     <Image src={Logo} alt="Lichodev Logo" height={80} />
                 </Link>
 
-                <Link href={"/about"}>Acerca de</Link>
+                <nav className="flex gap-4">
+                    <Link href={"/nosotros"}>Nosotros</Link>
+                    <Link href={"/servicios"}>Servicios</Link>
+                    <Link href={"/contacto"}>Contacto</Link>
+                </nav>
             </section>
         </header>
     );
