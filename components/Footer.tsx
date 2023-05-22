@@ -1,7 +1,19 @@
+import Image from "next/image";
+import Logo from "./logo.svg";
+import Link from "next/link";
+
 export default function Footer() {
     return (
-        <footer className="bg-slate-950 text-slate-400 min-h-20 py-6">
-            <section className="w-full mx-auto max-w-7xl flex gap-40">
+        <footer className="bg-slate-950 text-slate-400 min-h-20 py-6 px-2">
+            <section className="w-full mx-auto max-w-7xl flex flex-col sm:flex-row gap-20">
+                <div className="flex-col flex gap-2">
+                    <Link
+                        href={"/"}
+                        className="inline-block hover:[transform:scale(1.05)] transition-transform"
+                    >
+                        <Image src={Logo} alt="Lichodev Logo" height={80} />
+                    </Link>
+                </div>
                 <div className="flex-col flex">
                     <h4 className="font-medium text-lg mb-2">
                         Mis redes sociales

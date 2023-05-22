@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Header() {
     return (
-        <header className="bg-primary-800">
+        <header className="bg-primary-800 px-2">
             <section className="flex items-center uppercase text-white w-full mx-auto max-w-7xl py-5">
                 <Link
                     href={"/"}
@@ -14,9 +14,9 @@ export default function Header() {
                 </Link>
 
                 <nav className="flex gap-4">
-                    <Link href={"/nosotros"}>Nosotros</Link>
-                    <Link href={"/servicios"}>Servicios</Link>
-                    <Link href={"/contacto"}>Contacto</Link>
+                    <Link href={"/#"}>Nosotros</Link>
+                    <Link href={"/#"}>Servicios</Link>
+                    <Link href={"/#"}>Contacto</Link>
                 </nav>
             </section>
         </header>
