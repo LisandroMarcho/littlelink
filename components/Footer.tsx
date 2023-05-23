@@ -24,7 +24,7 @@ const FooterLink = ({
 export default function Footer() {
     return (
         <footer className="bg-slate-950 text-slate-400">
-            <section className="flex flex-col justify-between sm:flex-row p-10 page-content">
+            <section className="flex flex-col gap-10 md:gap-0 justify-between sm:flex-row p-10 page-content">
                 <div className="flex-col flex gap-2 order-last sm:order-first">
                     <Link
                         href={"/"}
