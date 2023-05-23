@@ -23,7 +23,7 @@ const FooterLink = ({
 export default function Footer() {
     return (
         <footer className="bg-slate-950 text-slate-400 min-h-20">
-            <section className="w-full flex flex-col sm:flex-row gap-20 page-content p-10">
+            <section className="flex flex-col sm:flex-row gap-20 page-content p-10">
                 <div className="flex-col flex gap-2 order-last sm:order-first">
                     <Link
                         href={"/"}

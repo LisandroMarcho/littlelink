@@ -7,8 +7,8 @@ import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 
 export default function Header() {
     return (
-        <header className="bg-primary-800 px-2">
-            <section className="flex items-center text-white w-full mx-auto max-w-7xl py-5">
+        <header className="bg-primary-800">
+            <section className="flex items-center text-white page-content py-5 px-10">
                 <Link
                     href={"/"}
                     className="inline-block hover:[transform:scale(1.05)] transition-transform"

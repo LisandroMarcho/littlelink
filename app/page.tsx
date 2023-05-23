@@ -3,7 +3,7 @@ import Negocios from "../components/Negocios";
 
 export default function Page() {
     return (
-        <main className="w-full ">
+        <main>
             <Hero />
             <Negocios />
             <section className="bg-slate-900 text-white my-10">
