@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.page-content {
+    @apply mx-auto max-w-7xl;
+}

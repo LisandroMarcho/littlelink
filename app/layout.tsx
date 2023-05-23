@@ -14,7 +14,7 @@ export default function RootLayout({
 }) {
     return (
         <html lang="es">
-            <body className="bg-slate-300 min-h-screen">
+            <body className="bg-white min-h-screen">
                 <Header />
                 {children}
                 <Footer />
