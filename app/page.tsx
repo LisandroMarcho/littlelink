@@ -1,3 +1,4 @@
+import ContactForm from "../components/ContactForm";
 import Hero from "../components/Hero";
 import Negocios from "../components/Negocios";
 import SectionContainer from "../components/SectionContainer";
@@ -47,9 +48,7 @@ export default function Page() {
                     </span>
                 </h2>
             </SectionContainer>
-            <SectionContainer isWide={false}>
-                <h2 className="text-4xl font-extrabold">Formulario contacto</h2>
-            </SectionContainer>
+            <ContactForm />
         </main>
     );
 }

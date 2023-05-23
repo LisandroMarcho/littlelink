@@ -1,17 +1,30 @@
 import { useId } from "react";
 import type { HTMLInputTypeAttribute } from "react";
+import SectionContainer from "./SectionContainer";
 
 const Label = ({ text, htmlFor }: { text: string; htmlFor: string }) => (
-    <label className="block mb-1" htmlFor={htmlFor}>
+    <label
+        className="block mb-1 uppercase font-bold text-slate-400"
+        htmlFor={htmlFor}
+    >
         {text}
     </label>
 );
 
-const Input = ({ type, id }: { type: HTMLInputTypeAttribute; id: string }) => (
+const Input = ({
+    type,
+    id,
+    placeholder,
+}: {
+    type: HTMLInputTypeAttribute;
+    id: string;
+    placeholder?: string;
+}) => (
     <input
         type={type}
         id={id}
-        className="w-96 p-2 text-black font-bold rounded"
+        className="w-full p-2 pb-1 text-white bg-slate-700 border-b-4 outline-none border-b-slate-600 focus:border-b-white valid:border-b-primary-500 invalid:border-b-red-500"
+        placeholder={placeholder}
         required
     />
 );
@@ -20,40 +33,32 @@ export default function ContactForm() {
     const id = useId();
 
     return (
-        <form className="bg-slate-800 text-white p-6 w-fit rounded mb-2">
-            <h2 className="w-full text-3xl mb-5">Contactame</h2>
-            <div className="flex gap-16">
-                <div className="flex-col flex justify-between">
-                    <section>
-                        <Label text={"Nombre"} htmlFor={`${id}-name`} />
-                        <Input type="text" id={`${id}-name`} />
-                    </section>
-                    <section>
-                        <Label text={"Email"} htmlFor={`${id}-email`} />
-                        <Input type="email" id={`${id}-email`} />
-                    </section>
-                    <section>
-                        <Label text={"Asunto"} htmlFor={`${id}-subject`} />
-                        <Input type="text" id={`${id}-subject`} />
-                    </section>
-                </div>
-                <div>
+        <SectionContainer isWide={false}>
+            <h2 className="w-full mb-5 text-4xl font-bold">Aún tenés dudas?</h2>
+            <form className="flex flex-col gap-5 text-white w-full md:w-[500px]">
+                <section>
+                    <Label text={"Nombre"} htmlFor={`${id}-name`} />
+                    <Input type="text" id={`${id}-name`} />
+                </section>
+                <section>
+                    <Label text={"Email"} htmlFor={`${id}-email`} />
+                    <Input
+                        type="email"
+                        id={`${id}-email`}
+                        placeholder="Ej: tu@correo.com"
+                    />
+                </section>
+                <section>
                     <Label text={"Mensaje"} htmlFor={`${id}-message`} />
-                    <textarea
-                        name="message"
-                        id={`${id}-message`}
-                        cols={40}
-                        rows={8}
-                        className="rounded text-black p-2"
-                    ></textarea>
-                </div>
-            </div>
-            <button
-                type="submit"
-                className="mt-5 rounded p-2 bg-slate-400 text-black"
-            >
-                Enviar
-            </button>
-        </form>
+                    <Input type="text" id={`${id}-message`} />
+                </section>
+                <button
+                    type="submit"
+                    className="uppercase font-bold text-xl py-4 px-10 mt-5 bg-primary-800 text-gray-200 w-full"
+                >
+                    Consultar
+                </button>
+            </form>
+        </SectionContainer>
     );
 }

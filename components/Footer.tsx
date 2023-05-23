@@ -23,7 +23,7 @@ const FooterLink = ({
 export default function Footer() {
     return (
         <footer className="bg-slate-950 text-slate-400 min-h-20">
-            <section className="flex flex-col sm:flex-row gap-20 page-content p-10">
+            <section className="flex flex-col sm:flex-row gap-10 lg:gap-20 page-content p-10">
                 <div className="flex-col flex gap-2 order-last sm:order-first">
                     <Link
                         href={"/"}
@@ -60,6 +60,10 @@ export default function Footer() {
                     <FooterLink href="https://licho.tk">
                         licho.tk - url shortener
                     </FooterLink>
+                </div>
+                <div className="flex-col flex">
+                    <h4 className="font-medium text-lg mb-2">Acceso interno</h4>
+                    <FooterLink href="#">Portal Clientes</FooterLink>
                 </div>
             </section>
         </footer>
