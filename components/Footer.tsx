@@ -66,7 +66,7 @@ export default function Footer() {
                     <h4 className="font-medium text-lg mb-2">Acceso interno</h4>
                     <FooterLink href="#">Portal Clientes</FooterLink>
                 </div>
-                <div className="order-last">
+                <div className="order-first sm:order-last">
                     <a
                         href="#"
                         className="inline-block bg-primary-800 p-4 sm:aspect-square hover:-translate-y-1 transition-transform"
