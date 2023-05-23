@@ -19,7 +19,8 @@
     "homepage": "https://github.com/lichodev/lichodev.com.ar#readme",
     "dependencies": {
         "@radix-ui/react-navigation-menu": "^1.1.2",
-        "next": "^13.4.0"
+        "next": "^13.4.0",
+        "react-icons": "^4.8.0"
     },
     "devDependencies": {
         "@types/node": "18.15.11",

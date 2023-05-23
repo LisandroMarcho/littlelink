@@ -7,7 +7,7 @@ export default function Hero() {
 
     return (
         <section className="bg-slate-200 px-10 lg:px-20 py-20">
-            <div className="flex gap-5 justify-between page-content">
+            <div className="flex flex-col md:flex-row gap-5 justify-between page-content">
                 <div className="flex flex-col flex-wrap justify-center max-w-2xl">
                     <span className="text-4xl">Nos dedicamos a</span>
                     {/* TODO: Hacer animación para los titulos */}
@@ -21,7 +21,7 @@ export default function Hero() {
                         <li>Proveedores como AWS y DigitalOcean</li>
                     </ul>
                 </div>
-                <div className="hidden md:block w-[350px]">
+                <div className="w-full md:w-[350px] mt-6 md:mt-0">
                     <div className="m-auto rounded-full w-[300px] h-[300px] bg-slate-400"></div>
                 </div>
             </div>

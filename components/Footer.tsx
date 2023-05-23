@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Logo from "./logo.svg";
 import Link from "next/link";
+import { RxDoubleArrowUp } from "react-icons/rx";
 
 const FooterLink = ({
     children,
@@ -22,8 +23,8 @@ const FooterLink = ({
 
 export default function Footer() {
     return (
-        <footer className="bg-slate-950 text-slate-400 min-h-20">
-            <section className="flex flex-col sm:flex-row gap-10 lg:gap-20 page-content p-10">
+        <footer className="bg-slate-950 text-slate-400">
+            <section className="flex flex-col justify-between sm:flex-row p-10 page-content">
                 <div className="flex-col flex gap-2 order-last sm:order-first">
                     <Link
                         href={"/"}
@@ -64,6 +65,17 @@ export default function Footer() {
                 <div className="flex-col flex">
                     <h4 className="font-medium text-lg mb-2">Acceso interno</h4>
                     <FooterLink href="#">Portal Clientes</FooterLink>
+                </div>
+                <div className="order-last">
+                    <a
+                        href="#"
+                        className="inline-block bg-primary-800 p-4 sm:aspect-square hover:-translate-y-1 transition-transform"
+                    >
+                        <RxDoubleArrowUp className="inline-block text-white mx-auto text-3xl font-bold" />
+                        <span className="sm:hidden ms-2 text-white uppercase">
+                            Inicio de página
+                        </span>
+                    </a>
                 </div>
             </section>
         </footer>
