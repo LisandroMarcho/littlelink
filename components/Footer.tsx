@@ -65,6 +65,7 @@ export default function Footer() {
                 <div className="flex-col flex">
                     <h4 className="font-medium text-lg mb-2">Acceso interno</h4>
                     <FooterLink href="#">Portal Clientes</FooterLink>
+                    <FooterLink href="#">Site map</FooterLink>
                 </div>
                 <div className="order-first sm:order-last">
                     <a
